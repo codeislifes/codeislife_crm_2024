@@ -1,0 +1,441 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\login\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\css\\coming-soon-page.css",
+      "PackagePath": "staticwebassets\\login\\css\\coming-soon-page.css"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\css\\coming-soon-page.css.map",
+      "PackagePath": "staticwebassets\\login\\css\\coming-soon-page.css.map"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\css\\error-page-responsive.css",
+      "PackagePath": "staticwebassets\\login\\css\\error-page-responsive.css"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\css\\error-page-responsive.css.map",
+      "PackagePath": "staticwebassets\\login\\css\\error-page-responsive.css.map"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\css\\error-page.css",
+      "PackagePath": "staticwebassets\\login\\css\\error-page.css"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\css\\error-page.css.map",
+      "PackagePath": "staticwebassets\\login\\css\\error-page.css.map"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\css\\fontawesome.css",
+      "PackagePath": "staticwebassets\\login\\css\\fontawesome.css"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\css\\login.css",
+      "PackagePath": "staticwebassets\\login\\css\\login.css"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\css\\login.css.map",
+      "PackagePath": "staticwebassets\\login\\css\\login.css.map"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\css\\whatsapp-chat.css",
+      "PackagePath": "staticwebassets\\login\\css\\whatsapp-chat.css"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\css\\whatsapp-chat.css.map",
+      "PackagePath": "staticwebassets\\login\\css\\whatsapp-chat.css.map"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\fonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\login\\fonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\fonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\login\\fonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\fonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\fonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\login\\fonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\fonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\login\\fonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\fonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\login\\fonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\fonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\login\\fonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\fonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\fonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\login\\fonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\fonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\login\\fonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\fonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\login\\fonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\fonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\login\\fonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\fonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\login\\fonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\fonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\login\\fonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\fonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\login\\fonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\images\\background-1.png",
+      "PackagePath": "staticwebassets\\login\\images\\background-1.png"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\images\\favicon.png",
+      "PackagePath": "staticwebassets\\login\\images\\favicon.png"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\images\\logo.png",
+      "PackagePath": "staticwebassets\\login\\images\\logo.png"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\images\\profile_01.jpg",
+      "PackagePath": "staticwebassets\\login\\images\\profile_01.jpg"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\images\\profile_02.jpg",
+      "PackagePath": "staticwebassets\\login\\images\\profile_02.jpg"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\images\\profile_03.jpg",
+      "PackagePath": "staticwebassets\\login\\images\\profile_03.jpg"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\images\\profile_04.jpg",
+      "PackagePath": "staticwebassets\\login\\images\\profile_04.jpg"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\images\\whatsapp.png",
+      "PackagePath": "staticwebassets\\login\\images\\whatsapp.png"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\js\\app.js",
+      "PackagePath": "staticwebassets\\login\\js\\app.js"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\js\\countdown.js",
+      "PackagePath": "staticwebassets\\login\\js\\countdown.js"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\js\\jquery-3.5.1.min.js",
+      "PackagePath": "staticwebassets\\login\\js\\jquery-3.5.1.min.js"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\js\\script.js",
+      "PackagePath": "staticwebassets\\login\\js\\script.js"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\js\\whatsapp-chat.js",
+      "PackagePath": "staticwebassets\\login\\js\\whatsapp-chat.js"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\scss\\coming-soon-page.scss",
+      "PackagePath": "staticwebassets\\login\\scss\\coming-soon-page.scss"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\scss\\error-page-responsive.scss",
+      "PackagePath": "staticwebassets\\login\\scss\\error-page-responsive.scss"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\scss\\error-page.scss",
+      "PackagePath": "staticwebassets\\login\\scss\\error-page.scss"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\scss\\login.scss",
+      "PackagePath": "staticwebassets\\login\\scss\\login.scss"
+    },
+    {
+      "Id": "D:\\projects\\learning\\bootcamp2\\codeislife.crm\\codeislife.crm.web.app\\wwwroot\\login\\scss\\whatsapp-chat.scss",
+      "PackagePath": "staticwebassets\\login\\scss\\whatsapp-chat.scss"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.codeislife.crm.web.app.props",
+      "PackagePath": "build\\codeislife.crm.web.app.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.codeislife.crm.web.app.props",
+      "PackagePath": "buildMultiTargeting\\codeislife.crm.web.app.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.codeislife.crm.web.app.props",
+      "PackagePath": "buildTransitive\\codeislife.crm.web.app.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.codeislife.crm.web.app.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,222 @@
+/* Coming soon */
+/*==============
+Page General css
+=================*/
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.loader-wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ffffff;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+}
+
+.loader {
+  border: 16px solid #111;
+  border-radius: 50%;
+  border-top: 16px double #5076db;
+  border-bottom: 16px double #5076db;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*==============
+  [01] Page css
+=================*/
+.page-section {
+  background-image: url("../images/background-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.page-section .content-detail {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.page-section .content-detail .description {
+  margin: auto auto 5px auto;
+  color: #777;
+}
+.page-section .content-detail .description,
+.page-section .content-detail .sub-title {
+  margin-bottom: 5px;
+}
+.page-section .content-detail .hero-container {
+  position: relative;
+  z-index: 1;
+}
+.page-section .content-detail .hero-counter,
+.page-section .content-detail .hero-container {
+  max-width: 500px;
+}
+.page-section .content-detail .logo {
+  margin: 0 auto 15px auto;
+  text-align: center;
+}
+.page-section .content-detail .title {
+  margin-bottom: 15px;
+  color: #555;
+  font-weight: 800;
+  text-align: center;
+}
+.page-section .content-detail .title span {
+  color: #5bc86d;
+  font-weight: 800;
+}
+.page-section .content-detail .sub-title {
+  text-transform: uppercase;
+  color: #555;
+  font-weight: 600;
+}
+.page-section .content-detail #timer {
+  padding: 30px 0;
+  color: #111;
+  text-align: center;
+  text-transform: uppercase;
+}
+.page-section .content-detail #timer .date-box {
+  margin: 8px;
+  padding: 10px;
+  width: 85px;
+  height: 85px;
+  display: inline-block;
+  background-color: rgba(80, 118, 219, 0.99);
+  font-size: 28px;
+  font-weight: 600;
+  z-index: 2;
+  color: #fff;
+  border-radius: 30px;
+}
+.page-section .content-detail #timer .text {
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+}
+.page-section .content-detail .hero-counter-desc {
+  color: #777;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+}
+.page-section .content-detail .nav-details {
+  padding: 15px 0;
+  z-index: 5;
+}
+.page-section .content-detail .nav-details form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.page-section .content-detail .nav-details input {
+  width: 300px;
+  margin: 5px;
+  padding: 8px 15px;
+  color: #777;
+  border: 1px solid #5076db;
+  border-radius: 30px;
+  font-size: 14px;
+  background-color: transparent;
+  outline: transparent;
+}
+.page-section .content-detail .nav-details .btn {
+  margin: 5px;
+  padding: 8px 15px;
+  color: #5076db;
+  border: 1px solid #5076db;
+  border-radius: 30px;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.page-section .content-detail .nav-details .btn:hover {
+  background-color: #5076db;
+  color: #fff;
+}
+
+/* Responsive css */
+@media (max-width: 575px) {
+  #timer {
+    padding: 20px 0;
+  }
+  #timer .date-box {
+    margin: 8px;
+    padding: 10px;
+    width: 75px !important;
+    height: 75px !important;
+    font-size: 18px;
+    border-radius: 15px !important;
+  }
+  #timer .date-box .text {
+    font-size: 11px !important;
+  }
+  .nav-details form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+/*# sourceMappingURL=coming-soon-page.css.map */

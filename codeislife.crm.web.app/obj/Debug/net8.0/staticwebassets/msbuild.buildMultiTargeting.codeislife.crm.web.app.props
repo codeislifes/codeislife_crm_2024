@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\codeislife.crm.web.app.props" />
+</Project>

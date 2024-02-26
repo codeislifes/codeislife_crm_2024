@@ -1,0 +1,11 @@
+D:\projects\learning\bootcamp2\codeislife.crm\codeislife.crm.core.factories\bin\Debug\net8.0\codeislife.crm.core.factories.deps.json
+D:\projects\learning\bootcamp2\codeislife.crm\codeislife.crm.core.factories\bin\Debug\net8.0\codeislife.crm.core.factories.dll
+D:\projects\learning\bootcamp2\codeislife.crm\codeislife.crm.core.factories\bin\Debug\net8.0\codeislife.crm.core.factories.pdb
+D:\projects\learning\bootcamp2\codeislife.crm\codeislife.crm.core.factories\obj\Debug\net8.0\codeislife.crm.core.factories.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\learning\bootcamp2\codeislife.crm\codeislife.crm.core.factories\obj\Debug\net8.0\codeislife.crm.core.factories.AssemblyInfoInputs.cache
+D:\projects\learning\bootcamp2\codeislife.crm\codeislife.crm.core.factories\obj\Debug\net8.0\codeislife.crm.core.factories.AssemblyInfo.cs
+D:\projects\learning\bootcamp2\codeislife.crm\codeislife.crm.core.factories\obj\Debug\net8.0\codeislife.crm.core.factories.csproj.CoreCompileInputs.cache
+D:\projects\learning\bootcamp2\codeislife.crm\codeislife.crm.core.factories\obj\Debug\net8.0\codeislife.crm.core.factories.dll
+D:\projects\learning\bootcamp2\codeislife.crm\codeislife.crm.core.factories\obj\Debug\net8.0\refint\codeislife.crm.core.factories.dll
+D:\projects\learning\bootcamp2\codeislife.crm\codeislife.crm.core.factories\obj\Debug\net8.0\codeislife.crm.core.factories.pdb
+D:\projects\learning\bootcamp2\codeislife.crm\codeislife.crm.core.factories\obj\Debug\net8.0\ref\codeislife.crm.core.factories.dll
