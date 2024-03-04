@@ -1,0 +1,36 @@
+﻿@model PagingModel
+
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+        @{
+            var pageSize = Model.ShowPageSize;
+            var pageTotal = Convert.ToDouble(Model.TotalCount) / Convert.ToDouble(Model.PageSize);
+            var pageCount = Math.Round(pageTotal);
+            var showPrevAndNext = (pageCount > pageSize);
+        }
+
+        @if (showPrevAndNext)
+        {
+            <li class="page-item @(Model.PageIndex <= 1 ? "disabled" :"")">
+                <a class="page-link" asp-route-page="@(Model.PageIndex - 1)">Previous</a>
+            </li>
+        }
+
+        @for (int i = 1; i <= pageCount; i++)
+        {
+            if (showPrevAndNext && i > pageSize)
+                break;
+
+            <li class="page-item">
+                <a class="page-link" asp-route-page="@i">@i</a>
+            </li>
+        }
+
+        @if (showPrevAndNext)
+        {
+            <li class="page-item @(Model.PageIndex >= pageCount ? "disabled" :"")">
+                <a class="page-link" asp-route-page="@(Model.PageIndex + 1)">Next</a>
+            </li>
+        }
+    </ul>
+</nav>

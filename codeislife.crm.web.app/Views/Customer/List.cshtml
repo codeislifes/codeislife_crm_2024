@@ -1,0 +1,52 @@
+﻿@model CustomerListModel
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Code</th>
+            <th scope="col">Title</th>
+            <th scope="col">Lead(s)</th>
+            <th scope="col">Contact(s)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.TotalCount > 0)
+        {
+            foreach (var item in Model.Customers)
+            {
+                <tr>
+                    <td>@item.Code</td>
+                    <td>@item.Title</td>
+                    <td>
+                        <button type="button" class="btn btn-primary">
+                            Lead(s) <span class="badge text-bg-secondary">@item.LeadCount</span>
+                        </button>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-primary">
+                            Contact(s) <span class="badge text-bg-secondary">@item.ContactCount</span>
+                        </button>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="4" class="text-center py-2 text-body">
+                    Kayıtlı müşteri bulunamadı!
+                </td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="4">
+                <vc:paging paging-model="@Model"></vc:paging>
+            </td>
+        </tr>
+    </tfoot>
+</table>
+
+
