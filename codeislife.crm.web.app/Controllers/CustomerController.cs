@@ -78,6 +78,9 @@ public class CustomerController : Controller
     [HttpPost]
     public async Task<IActionResult> Create(CustomerCreateModel model)
     {
+        if (!ModelState.IsValid)
+            return View(model);
+
         var customer = _mapper.Map<Customer>(model);
         await _customerService.InsertCustomerAsync(customer);
 
