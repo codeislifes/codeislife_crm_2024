@@ -17,8 +17,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "codeislife.crm.core.service
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "codeislife.crm.core.factories", "codeislife.crm.core.factories\codeislife.crm.core.factories.csproj", "{67977BAD-5E37-4121-9C8D-F47CB20C233A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codeislife.crm.identity", "codeislife.crm.identity\codeislife.crm.identity.csproj", "{2F82B1FA-23AC-4781-8CB7-ACA6023AE699}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,10 +51,6 @@ Global
 		{67977BAD-5E37-4121-9C8D-F47CB20C233A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67977BAD-5E37-4121-9C8D-F47CB20C233A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67977BAD-5E37-4121-9C8D-F47CB20C233A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2F82B1FA-23AC-4781-8CB7-ACA6023AE699}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2F82B1FA-23AC-4781-8CB7-ACA6023AE699}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2F82B1FA-23AC-4781-8CB7-ACA6023AE699}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2F82B1FA-23AC-4781-8CB7-ACA6023AE699}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

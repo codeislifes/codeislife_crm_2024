@@ -6,4 +6,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Contacts\" />
+    <Folder Include="Leads\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\codeislife.crm.data.domain\codeislife.crm.data.domain.csproj" />
+    <ProjectReference Include="..\codeislife.crm.data\codeislife.crm.data.csproj" />
+  </ItemGroup>
+
 </Project>

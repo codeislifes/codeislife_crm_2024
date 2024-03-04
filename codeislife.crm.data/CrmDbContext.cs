@@ -8,8 +8,11 @@ public class CrmDbContext : DbContext
     {
     }
 
+    public DbSet<Contact> Contact { get; set; }
     public DbSet<Customer> Customer { get; set; }
     public DbSet<Lead> Lead { get; set; }
+
+    public DbSet<CustomerContact> CustomerContact { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
