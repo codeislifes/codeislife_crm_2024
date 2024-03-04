@@ -1,16 +1,23 @@
-﻿using codeislife.crm.core.services.Customers;
+﻿using AutoMapper;
+using codeislife.crm.core.services.Customers;
+using codeislife.crm.data.domain;
 using codeislife.crm.web.app.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace codeislife.crm.web.app.Controllers;
 public class CustomerController : Controller
 {
+    private readonly IMapper _mapper;
     private readonly ICustomerService _customerService;
-    public CustomerController(ICustomerService customerService)
+    public CustomerController
+    (
+        IMapper mapper,
+        ICustomerService customerService
+    )
     {
+        _mapper = mapper;
         _customerService = customerService;
     }
-
 
     public async Task<IActionResult> Index()
     {
@@ -50,26 +57,18 @@ public class CustomerController : Controller
 
         var customers = await _customerService.GetAllCustomersAsync(pageIndex: --currentPage, pageSize: pageSize);
 
-        var customerModels = customers.Select(p =>
-        {
-            return new CustomerModel
-            {
-                Code = p.Code,
-                Title = p.Title,
-            };
-        }).ToList();
+        var customerModels = customers.Select(p => _mapper.Map<CustomerModel>(p)).ToList();
 
         var model = new CustomerListModel
         {
             CurrentPage = page,
             PageSize = pageSize,
-            Customers = customerModels,
+            Data = customerModels,
             TotalCount = dataCount
         };
 
         return View(model);
     }
-
 
     public IActionResult Create()
     {
@@ -77,27 +76,43 @@ public class CustomerController : Controller
     }
 
     [HttpPost]
-    public IActionResult Create(int name)
+    public async Task<IActionResult> Create(CustomerCreateModel model)
     {
-        return View();
+        var customer = _mapper.Map<Customer>(model);
+        await _customerService.InsertCustomerAsync(customer);
+
+        if (customer.Id != Guid.Empty)
+            return RedirectToAction("Update", new { id = customer.Id });
+
+        return View(model);
     }
 
-
-
-
-    public IActionResult Update(int id)
+    public async Task<IActionResult> Update(Guid id)
     {
-        return View();
+        var customer = await _customerService.GetCustomerByIdAsync(id);
+        if (customer == null)
+            return RedirectToAction("List");
+
+        var model = _mapper.Map<CustomerUpdateModel>(customer);
+        return View(model);
     }
 
     [HttpPost]
-    public IActionResult Update(string name)
+    public async Task<IActionResult> Update(CustomerUpdateModel model)
     {
-        return View();
+        var customer = await _customerService.GetCustomerByIdAsync(model.Id);
+        if (customer == null)
+            return RedirectToAction("List");
+
+        customer = _mapper.Map(model, customer);
+        await _customerService.UpdateCustomerAsync(customer);
+
+        return RedirectToAction("List");
     }
 
-    public IActionResult Delete(int id)
+    public async Task<IActionResult> Delete(Guid id)
     {
-        return View();
+        var result = await _customerService.DeleteCustomerAsync(id);
+        return RedirectToAction("List");
     }
 }

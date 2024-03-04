@@ -10,7 +10,6 @@ public class Customer : BaseEntity<Guid>, ISoftDeletable, IHasCreatedDate
 
     public bool Deleted { get; set; }
 
-    // TODO : Default Value nasıl atanır göster
     public DateTime CreatedDateUtc { get; set; }
 
     public virtual ICollection<Lead> Leads { get; set; } = [];

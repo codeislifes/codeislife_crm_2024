@@ -21,7 +21,7 @@
             if (showPrevAndNext && i > pageSize)
                 break;
 
-            <li class="page-item">
+            <li class="page-item @(Model.PageIndex == i ? "active" :"")">
                 <a class="page-link" asp-route-page="@i">@i</a>
             </li>
         }

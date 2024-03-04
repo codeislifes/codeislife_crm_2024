@@ -18,6 +18,11 @@ public class CrmDbContext : DbContext
     {
         base.OnModelCreating(modelBuilder);
 
+        //modelBuilder.Entity<Customer>()
+        //    .Property(p=> p.CreatedDateUtc)
+        //    .HasDefaultValue(DateTime.UtcNow)
+        //    .IsRequired(true);
+
         modelBuilder.Entity<Lead>()
             .HasOne(l => l.Customer)
             .WithMany(c => c.Leads)

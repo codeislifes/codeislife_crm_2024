@@ -1,10 +1,7 @@
-﻿namespace codeislife.crm.web.app.Models;
+﻿using codeislife.crm.web.models;
 
-public class CustomerListModel
+namespace codeislife.crm.web.app.Models;
+
+public class CustomerListModel : BasePagedListModel<CustomerModel>
 {
-    public int ShowPageSize { get; set; } = 10;
-    public int TotalCount { get; set; }
-    public int CurrentPage { get; set; } = 1;
-    public int PageSize { get; set; }
-    public List<CustomerModel> Customers { get; set; }
 }

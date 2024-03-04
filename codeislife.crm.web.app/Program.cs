@@ -11,10 +11,13 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<CrmDbContext>(options =>
 {
     var connectionString = builder.Configuration.GetConnectionString("CommonDb");
+    options.UseLazyLoadingProxies(false);
     options.UseSqlServer(connectionString, b => b.MigrationsAssembly("codeislife.crm.web.app"));
 });
 
 builder.Services.AddTransient<ICustomerService, CustomerService>();
+
+builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
 var app = builder.Build();
 

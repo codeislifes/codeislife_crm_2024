@@ -7,18 +7,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
     <PackageReference Include="Faker.NETCore" Version="1.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.2">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="8.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.2" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\codeislife.crm.core.services\codeislife.crm.core.services.csproj" />
     <ProjectReference Include="..\codeislife.crm.data\codeislife.crm.data.csproj" />
+    <ProjectReference Include="..\codeislife.crm.web.models\codeislife.crm.web.models.csproj" />
   </ItemGroup>
 
   <ItemGroup>

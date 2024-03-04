@@ -18,5 +18,5 @@ public class Lead : BaseEntity<Guid>, IHasCreatedDate
     public DateTime CreatedDateUtc { get; set; }
 
     public Guid? CustomerId { get; set; }
-    public Customer? Customer { get; set; }
+    public virtual Customer? Customer { get; set; }
 }

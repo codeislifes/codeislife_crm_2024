@@ -1,52 +1,73 @@
 ﻿@model CustomerListModel
 
+<div class="row mb-5">
+    <div class="col-12">
+        <a asp-action="Create" class="btn btn-outline-secondary">Yeni Müşteri</a>
+    </div>
+</div>
 
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th scope="col">Code</th>
-            <th scope="col">Title</th>
-            <th scope="col">Lead(s)</th>
-            <th scope="col">Contact(s)</th>
-        </tr>
-    </thead>
-    <tbody>
-        @if (Model.TotalCount > 0)
-        {
-            foreach (var item in Model.Customers)
-            {
+<div class="row">
+    <div class="col">
+        <div class="row">
+            <div class="col">
+                <vc:paging paging-model="@Model"></vc:paging>
+            </div>
+        </div>
+        <table class="table table-striped">
+            <thead>
                 <tr>
-                    <td>@item.Code</td>
-                    <td>@item.Title</td>
-                    <td>
-                        <button type="button" class="btn btn-primary">
-                            Lead(s) <span class="badge text-bg-secondary">@item.LeadCount</span>
-                        </button>
-                    </td>
-                    <td>
-                        <button type="button" class="btn btn-primary">
-                            Contact(s) <span class="badge text-bg-secondary">@item.ContactCount</span>
-                        </button>
+                    <th scope="col">Cari Kodu</th>
+                    <th scope="col">Ünvan</th>
+                    <th scope="col">Fırsat(lar)</th>
+                    <th scope="col">Bağlantı(lar)</th>
+                    <th scope="col">İşlemler</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.TotalCount > 0)
+                {
+                    foreach (var item in Model.Data)
+                    {
+                        <tr>
+                            <td>@item.Code</td>
+                            <td>@item.Title</td>
+                            <td>
+                                <button type="button" class="btn btn-primary">
+                                    Lead(s) <span class="badge text-bg-secondary">@item.LeadCount</span>
+                                </button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-primary">
+                                    Contact(s) <span class="badge text-bg-secondary">@item.ContactCount</span>
+                                </button>
+                            </td>
+                            <td>
+                                <a asp-action="Update" asp-route-id="@item.Id" class="btn btn-success">
+                                    Düzenle
+                                </a>
+                                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">
+                                    Sil
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="4" class="text-center py-2 text-body">
+                            Kayıtlı müşteri bulunamadı!
+                        </td>
+                    </tr>
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">
+                        <vc:paging paging-model="@Model"></vc:paging>
                     </td>
                 </tr>
-            }
-        }
-        else
-        {
-            <tr>
-                <td colspan="4" class="text-center py-2 text-body">
-                    Kayıtlı müşteri bulunamadı!
-                </td>
-            </tr>
-        }
-    </tbody>
-    <tfoot>
-        <tr>
-            <td colspan="4">
-                <vc:paging paging-model="@Model"></vc:paging>
-            </td>
-        </tr>
-    </tfoot>
-</table>
-
-
+            </tfoot>
+        </table>
+    </div>
+</div>

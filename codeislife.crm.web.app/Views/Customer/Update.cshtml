@@ -1,10 +1,12 @@
-﻿@model CustomerCreateModel
+﻿@model CustomerUpdateModel
 
 <div class="row">
     <div class="col">
         @*<form asp-action="Create" method="post" class="row g-3">*@
-        @using (Html.BeginForm("Create", "Customer", FormMethod.Post, new { @class = "row g-3" }))
+        @using (Html.BeginForm("Update", "Customer", FormMethod.Post, new { @class = "row g-3" }))
         {
+            @Html.HiddenFor(p=> p.Id)
+            @*<input type="hidden" asp-for="Id" />*@
             <div class="col-md-6">
                 <label asp-for="Title" class="form-label">Müşteri Ünvanı</label>
                 <input asp-for="Title" class="form-control" />
