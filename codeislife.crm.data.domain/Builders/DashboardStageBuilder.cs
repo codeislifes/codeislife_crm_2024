@@ -14,9 +14,9 @@ public class DashboardStageBuilder : IEntityTypeConfiguration<DashboardStage>
         builder.Property(p => p.Name).IsRequired().HasMaxLength(20);
         builder.Property(p => p.DisplayOrder).IsRequired();
 
-        builder.Property(p => p.OnLeadState)
-            .HasConversion<int>()
-            .HasField("LeadState");
+        //builder.Property(p => p.OnLeadState)
+        //    .HasConversion<int>()
+        //    .HasField("LeadState");
        // builder.Ignore(p => p.OnLeadState);
     }
 }
