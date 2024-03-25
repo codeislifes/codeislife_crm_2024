@@ -1,0 +1,175 @@
+﻿<div class="row">
+    <div class="col-3">
+        <div class="card text-bg-light">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col">Yeni</div>
+                    <div class="col-4">
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#stageSettingsModal" data-stage-id="5">
+                            <i class="bi bi-gear-wide-connected"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#stageSettingsModal" data-stage-id="5">
+                            <i class="bi bi-plus-circle"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body stage">
+                <div class="card-group flex-column dropzone"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="card text-bg-info ">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col">İşleme Alındı</div>
+                    <div class="col-4">
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#stageSettingsModal" data-stage-id="4">
+                            <i class="bi bi-gear-wide-connected"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#stageSettingsModal" data-stage-id="4">
+                            <i class="bi bi-plus-circle"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body stage">
+                <div class="card-group flex-column dropzone"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="card text-bg-danger">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col">Kaybedildi</div>
+                    <div class="col-4">
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#stageSettingsModal" data-stage-id="2">
+                            <i class="bi bi-gear-wide-connected"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#stageSettingsModal" data-stage-id="2">
+                            <i class="bi bi-plus-circle"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body stage">
+                <div class="card-group flex-column dropzone">
+                    <div class="card mb-3 draggable">
+                        <div class="card-header">
+                            ABC MANAV
+                        </div>
+                        <div class="card-body">
+                            <p>@Faker.Lorem.Paragraph(2)</p>
+                            <span class="text-bg-success lead-state"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="card text-bg-success ">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col">Kazanıldı</div>
+                    <div class="col-4">
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#stageSettingsModal" data-stage-id="1">
+                            <i class="bi bi-gear-wide-connected"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#stageSettingsModal" data-stage-id="1">
+                            <i class="bi bi-plus-circle"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body stage">
+                <div class="card-group flex-column dropzone">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style type="text/css">
+    .lead-state {
+        width: 12px;
+        height: 12px;
+        display: block;
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        border-radius: 50px;
+    }
+
+    .draggable {
+        z-index: 1050;
+        max-width: 315px;
+    }
+
+    .dropzone {
+        min-height: 100px;
+    }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const droppable = new Draggable.Droppable(document.querySelectorAll('.stage'), {
+            draggable: '.draggable',
+            dropzone: '.dropzone',
+        });
+
+        droppable.on('droppable:start', (e) => {
+            console.log(e);
+            console.log("Modeli Aldık.!")
+        });
+
+        //droppable.on('droppable:dropped', () =>
+        //    console.log("Taşındı!")
+        //);
+
+        //droppable.on('droppable:returned', () => console.log("Taşıma İptal edildi.!"));
+
+        droppable.on('droppable:stop', (e) => {
+            console.log(e);
+            console.log("Dbyi güncelledik!");
+        });
+
+        const settingButtons = document.querySelectorAll("button[data-stage-id][data-bs-toggle=modal]");
+        for (let sb of settingButtons) {
+            sb.addEventListener("click", (e) => {
+                const id = sb.dataset.stageId;
+                console.log(id);
+            });
+        }
+    });
+</script>
+
+<!-- Modal -->
+<div class="modal fade" id="stageSettingsModal" tabindex="-1" aria-labelledby="stageSettingsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="stageSettingsModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col">
+                        <!select class="form-select" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </!select>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>

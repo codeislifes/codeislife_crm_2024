@@ -7,5 +7,5 @@ dotnet ef migrations add init --startup-project .\codeislife.crm.web.app.csproj 
 # Update Database
 
 ```console
-dotnet ef update database --startup-project .\codeislife.crm.web.app.csproj --project ..\codeislife.crm.data\ --context CrmDbContext
+dotnet ef database update--startup-project .\codeislife.crm.web.app.csproj --project ..\codeislife.crm.data\ --context CrmDbContext
 ```

@@ -9,11 +9,11 @@ using codeislife.crm.data;
 
 #nullable disable
 
-namespace codeislife.crm.web.app.Migrations
+namespace codeislife.crm.data.Migrations
 {
     [DbContext(typeof(CrmDbContext))]
-    [Migration("20240226175504_maintain_infra_0")]
-    partial class maintain_infra_0
+    [Migration("20240325192522_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -104,6 +104,71 @@ namespace codeislife.crm.web.app.Migrations
                     b.ToTable("CustomerContact");
                 });
 
+            modelBuilder.Entity("codeislife.crm.data.domain.Dashboard", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Dashboard");
+                });
+
+            modelBuilder.Entity("codeislife.crm.data.domain.DashboardStage", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("DashboardId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("DisplayOrder")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DashboardId");
+
+                    b.ToTable("DashboardStage");
+                });
+
+            modelBuilder.Entity("codeislife.crm.data.domain.DashboardStageLead", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("DashboardStageId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("DisplayOrder")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("LeadId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("LeadId");
+
+                    b.ToTable("DashboardStageLead");
+                });
+
             modelBuilder.Entity("codeislife.crm.data.domain.Lead", b =>
                 {
                     b.Property<Guid>("Id")
@@ -161,6 +226,28 @@ namespace codeislife.crm.web.app.Migrations
                     b.Navigation("Customer");
                 });
 
+            modelBuilder.Entity("codeislife.crm.data.domain.DashboardStage", b =>
+                {
+                    b.HasOne("codeislife.crm.data.domain.Dashboard", "Dashboard")
+                        .WithMany("Stages")
+                        .HasForeignKey("DashboardId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Dashboard");
+                });
+
+            modelBuilder.Entity("codeislife.crm.data.domain.DashboardStageLead", b =>
+                {
+                    b.HasOne("codeislife.crm.data.domain.Lead", "Lead")
+                        .WithMany("StageLeads")
+                        .HasForeignKey("LeadId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Lead");
+                });
+
             modelBuilder.Entity("codeislife.crm.data.domain.Lead", b =>
                 {
                     b.HasOne("codeislife.crm.data.domain.Customer", "Customer")
@@ -180,6 +267,16 @@ namespace codeislife.crm.web.app.Migrations
                     b.Navigation("CustomerContacts");
 
                     b.Navigation("Leads");
+                });
+
+            modelBuilder.Entity("codeislife.crm.data.domain.Dashboard", b =>
+                {
+                    b.Navigation("Stages");
+                });
+
+            modelBuilder.Entity("codeislife.crm.data.domain.Lead", b =>
+                {
+                    b.Navigation("StageLeads");
                 });
 #pragma warning restore 612, 618
         }

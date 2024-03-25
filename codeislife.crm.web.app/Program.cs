@@ -12,7 +12,7 @@ builder.Services.AddDbContext<CrmDbContext>(options =>
 {
     var connectionString = builder.Configuration.GetConnectionString("CommonDb");
     options.UseLazyLoadingProxies(false);
-    options.UseSqlServer(connectionString, b => b.MigrationsAssembly("codeislife.crm.web.app"));
+    options.UseSqlServer(connectionString, b => b.MigrationsAssembly("codeislife.crm.data"));
 });
 
 builder.Services.AddTransient<ICustomerService, CustomerService>();
@@ -40,6 +40,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Lead}/{action=Index}/{id?}");
 
 app.Run();
